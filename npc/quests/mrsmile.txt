@@ -14,93 +14,93 @@
 //= 1.4a Fixed a little Typo error in duplicates. (bugreport:749) [Samuray22]
 //============================================================ 
 
--	script	Smile Assistance::SmileHelper	92,{
-	mes "[Smile Girl]";
-	mes "Hi ~ Hi ~";
-	mes "This is Smile Assistance.";
-	mes "How may I help you ?";
+-	script	Dona Risadinha::SmileHelper	92,{
+	mes "[Menina do Sorriso]";
+	mes "Oi ~ Oi ~";
+	mes "Esta é a Assistência ao Sorriso.";
+	mes "Como posso ajudá-lo ?";
 	next;
-	switch(select("^3355FFMr. Smile^000000 ?:Construct ^3355FFMr. Smile^000000 :Quit")) {
+	switch(select("^3355FFOque é Máscara Feliz^000000 ?:Fazer ^3355FFMáscara Feliz^000000 :Sair")) {
 	case 1:
-		mes "[Smile Girl]";
-		mes "National Event held by the command of ^5577FFHis majesty Tristram the 3rd^000000,";
-		mes "that intends to encourage the nation of the Rune-Midgarts Kingdom";
-		mes " to play in more enjoyable atmosphere!";
-		mes "I am ^3355FF' Smile Assistance '^000000,";
-		mes ".. who leads the national event under the name of ";
-		mes "^3355FFSmile throughout the Rune-Midgarts Kingdom~^000000";
+		mes "[Menina do Sorriso]";
+		mes "Evento Nacional realizado pelo comando de ^5577FFSua majestade Tristram o terceiro^000000,";
+		mes "que pretende encorajar a nação do Reino de Rune-Midgard";
+		mes " para jogar em uma atmosfera mais agradável!";
+		mes "Eu sou ^3355FF' Menina do Sorriso '^000000,";
+		mes ".. quem lidera o evento nacional sob o nome de ";
+		mes "^3355FFSorria por todo o Reino de Rune-Midgard~^000000";
 		next;
-		mes "[Smile Girl]";
-		mes "With simple and easy-to-get items,";
-		mes "I can provide you";
-		mes "^3355FF' Mr. Smile '^000000.";
-		mes "The requirements are followings.";
+		mes "[Menina do Sorriso]";
+		mes "Com itens simples e fáceis de obter,";
+		mes "Posso te fornecer";
+		mes "^3355FF' Máscara Feliz '^000000.";
+		mes "Os requisitos são os seguintes.";
 		next;
-		mes "[Smile Girl]";
+		mes "[Menina do Sorriso]";
 		mes "^3355FF10 Jellopy^000000";
-		mes "^3355FF10 Fluff^000000";
-		mes "^3355FF10 Clover^000000";
+		mes "^3355FF10 Felpa^000000";
+		mes "^3355FF10 Trevo^000000";
 		next;
-		mes "[Smile Girl]";
-		mes "With this event";
-		mes "Everybody will be happy and smile,";
-		mes "getting together with other people,";
-		mes "And will try to make Ragnarok the most enjoyable game in the world.";
+		mes "[Menina do Sorriso]";
+		mes "Com este evento";
+		mes "Todo mundo vai ser feliz e sorrir,";
+		mes "ficar junto com outras pessoas,";
+		mes "E tentará fazer do Ragnarok o jogo mais agradável do mundo.";
 		close;
 	case 2:
 		if (countitem(909) > 9 && countitem(914) > 9 && countitem(705) > 9) {
-			mes "[Smile Girl]";
-			mes "Congratulations !";
-			mes "Now please take this Mr.Smile.";
+			mes "[Menina do sorriso]";
+			mes "Parabéns !";
+			mes "Agora, por favor, pegue está Máscara Feliz.";
 			next;
 			delitem 909,10; //Jellopy
 			delitem 914,10; //Fluff
 			delitem 705,10; //Clover
 			getitem 2278,1; //Mr_Smile
-			mes "[Smile Girl]";
-			mes "His majesty,Tristram the 3rd";
-			mes "has promised to try his best to make Ragnarok better and more enjoyable.";
+			mes "[Menina do Sorriso]";
+			mes "Sua majestade, Tristram o terceiro";
+			mes "prometeu fazer o melhor para tornar o Ragnarok melhor e mais agradável.";
 			next;
-			mes "The fact mentioned above";
-			mes "was announced by";
-			mes "the Public Information Bureau of the Rune-Midgarts Kingom.";
+			mes "O fato mencionado acima";
+			mes "foi anunciado por";
+			mes "o Departamento de Informação Pública do Reino de Rune-Midgart.";
 			close;
 		}
 		else {
-			mes "[Smile Girl]";
-			mes "Oh - unfortunately";
-			mes "You have not brought";
-			mes "enough items for Mr. Smile.";
+			mes "[Menina do Sorriso]";
+			mes "Oh - infelizmente";
+			mes "Você não trouxe";
+			mes "itens suficientes para a Máscara Feliz.";
 			mes "^3355FF10 Jellopy^000000";
-			mes "^3355FF10 Fluff^000000";
-			mes "^3355FF10 Clover^000000";
-			mes "Please check the requirements above.";
+			mes "^3355FF10 Felpa^000000";
+			mes "^3355FF10 Trevo^000000";
+			mes "Por favor, verifique os requisitos acima.";
 			close;
 		}
 	case 3:
-		mes "[Smile Girl]";
-		mes "Thank you for visiting us.";
-		mes "We ..";
-		mes "The Rune-Midgarts Kingdom";
-		mes "always try to make Ragnarok";
-		mes "better and more enjoyable game.";
+		mes "[Menina do Sorriso]";
+		mes "Obrigado por nos visitar.";
+		mes "Nós ..";
+		mes "O reino de Rune-Midgarts";
+		mes "tentará sempre fazer o Ragnarok";
+		mes "o jogo melhor e mais agradável.";
 		next;
-		mes "[Smile Girl]";
-		mes "We sincerely ask you";
-		mes "to cooperate.";
-		mes "The fact mentioned above";
-		mes "was announced by the Public Information Bureau of the Rune-Midgarts Kingom.";
+		mes "[Menina do Sorriso]";
+		mes "Nós sinceramente te perguntamos";
+		mes "para você cooperar.";
+		mes "O fato mencionado acima";
+		mes "foi anunciado pelo Public Information Bureau do Reino de Rune-Midgart.";
 		close;
 	}
 }
 
 // Additional Smile Assistance staff
-alberta,113,53,4	duplicate(SmileHelper)	Smile Assistance#alb	92
-aldebaran,136,135,4	duplicate(SmileHelper)	Smile Assistance#alde	92
-geffen,119,107,4	duplicate(SmileHelper)	Smile Assistance#gef	92
-moc_ruins,59,154,3	duplicate(SmileHelper)	Smile Assistance#moc	92
-payon,186,104,5	duplicate(SmileHelper)	Smile Assistance#pay	92
-prontera,157,187,4	duplicate(SmileHelper)	Smile Assistance#prt	92
+alberta,113,53,4	duplicate(SmileHelper)	Dona Risadinha#alb	92
+aldebaran,136,135,4	duplicate(SmileHelper)	Dona Risadinha#alde	92
+geffen,119,107,4	duplicate(SmileHelper)	Dona Risadinha#gef	92
+moc_ruins,59,154,3	duplicate(SmileHelper)	Dona Risadinha#moc	92
+payon,186,104,5	duplicate(SmileHelper)	Dona Risadinha#pay	92
+prt_in,38,104,5	duplicate(SmileHelper)	Dona Risadinha#prt	92
 
 //============================================================ 
 // Old changelog
