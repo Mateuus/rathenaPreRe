@@ -467,14 +467,14 @@ mes "Olá ^0000CD"+strcharinfo(0)+"^000000!";
 mes "Seja bem vindo ao Nosso Serviço de Teleporte.";
 mes "";
 mes "Para onde deseja ir hoje?";
-emotion e_no1;
+emotion ET_BEST;
 next;
 menu "Cidades",-,"Carvenas",L_dungeon,"Campos",L_campos;
 next;
 mes .npcname$;
 mes "Por favor";
 mes "Agora Selecione seu Destino.";
-emotion e_hmm;
+emotion ET_SCRATCH;
 next;
 menu  "Prontera ( ^FF0000"+getmapusers("prontera.gat")+" ^000000)",wprontera,
   "Alberta (^FF0000 "+getmapusers("alberta.gat")+" ^000000)",walberta,
@@ -507,7 +507,7 @@ L_dungeon:
 mes .npcname$;
 mes "Por favor";
 mes "Agora Selecione seu Destino.";
-emotion e_hmm;
+emotion ET_SCRATCH;
 next;
 menu 
   "A Grande Ferida", nyddun,
@@ -553,7 +553,7 @@ L_campos:
 mes .npcname$;
 mes "Por favor";
 mes "Agora Selecione seu Destino.";
-emotion e_hmm;
+emotion ET_SCRATCH;
 next;
 menu            "Campos de Amatsu",wamafild,
 		"Campos de Ayothaya",wayofild,
@@ -1904,6 +1904,7 @@ L_csv:
 	close;
 }
 
+/*
 -	script	Sistema Cash#02	-1,{
 
 OnPCLoginEvent:
@@ -1915,7 +1916,7 @@ dispbottom "Olá "+strcharinfo(0)+" você acaba de ganhar  "+.@cash+" CashPoins.";
 set #CASHPOINTS,#CASHPOINTS+.@cash;
 query_sql "UPDATE `login` SET `cash` = `cash` =0 WHERE `account_id`='"+getcharid(3)+"'";
 end;
-}
+}*/
 
 -	script	Sistema Cash#03	-1,{
 
@@ -1923,10 +1924,10 @@ OnPCLoginEvent:
 
 if (getgmlevel() >= 20){ end; }
 if(#CASHPOINTS == 0){ end; }
-dispbottom "Olá "+strcharinfo(0)+" você possui "+#CASHPOINTS+" CashPoints.";
+dispbottom "Olá "+strcharinfo(0)+" você possui "+#CASHPOINTS+" CASHPOINTS.";
 end;
 }
-
+	
 -	script	Sistema Vip#02	-1,{
 
 OnClock0001: 

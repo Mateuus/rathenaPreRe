@@ -16,7 +16,7 @@
 509,White_Herb,White Herb,0,120,,70,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal rand(75,115),0; },{},{}
 510,Blue_Herb,Blue Herb,0,60,,70,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal 0,rand(15,30); },{},{}
 511,Green_Herb,Green Herb,0,10,,30,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_end SC_POISON; },{},{}
-512,Apple,Apple,0,15,,20,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal rand(16,22),0; },{},{}
+512,Apple,Maça,0,15,,20,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal rand(16,22),0; },{},{}
 513,Banana,Banana,0,15,,20,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal rand(17,21),0; },{},{}
 514,Grape,Grape,0,200,,20,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal 0,rand(10,15); },{},{}
 515,Carrot,Carrot,0,15,,20,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal rand(18,20),0; },{},{}
@@ -107,11 +107,11 @@
 //===================================================================
 601,Wing_Of_Fly,Fly Wing,11,60,,50,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "AL_TELEPORT",1; },{},{}
 602,Wing_Of_Butterfly,Butterfly Wing,11,300,,50,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "AL_TELEPORT",3; },{},{}
-603,Old_Blue_Box,Old Blue Box,2,10000,,200,,,,,0xFFFFFFFF,63,2,,,,,,{ getrandgroupitem(IG_BlueBox,1); },{},{}
-604,Branch_Of_Dead_Tree,Dead Branch,2,50,,50,,,,,0xFFFFFFFF,63,2,,,,,,{ monster "this",-1,-1,"--ja--",-1-MOBG_Branch_Of_Dead_Tree,1,""; },{},{}
+603,Old_Blue_Box,Velha Caixa Azul,2,10000,,200,,,,,0xFFFFFFFF,63,2,,,,,,{ getrandgroupitem(IG_BlueBox,1); },{},{}
+604,Branch_Of_Dead_Tree,Galho Seco,2,50,,50,,,,,0xFFFFFFFF,63,2,,,,,,{ monster "this",-1,-1,"--ja--",-1-MOBG_Branch_Of_Dead_Tree,1,""; },{},{}
 605,Anodyne,Anodyne,11,2000,,100,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "SM_ENDURE",1; },{},{}
 606,Aloebera,Aloevera,11,1500,,100,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "SM_SELFPROVOKE",1; },{},{}
-607,Yggdrasilberry,Yggdrasil Berry,0,5000,,300,,,,,0xFFFFFFFF,63,2,,,,,,{ percentheal 100,100; },{},{}
+607,Yggdrasilberry,Yggdrasil Berry,0,5000,,50,,,,,0xFFFFFFFF,63,2,,,,,,{ percentheal 100,100; },{},{}
 608,Seed_Of_Yggdrasil,Yggdrasil Seed,0,5000,,300,,,,,0xFFFFFFFF,63,2,,,,,,{ percentheal 50,50; },{},{}
 609,Amulet,Amulet,2,100,,100,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
 610,Leaf_Of_Yggdrasil,Yggdrasil Leaf,11,4000,,100,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "ALL_RESURRECTION",1; },{},{}
@@ -189,8 +189,8 @@
 691,Fire_Scroll_1_5,Level 5 Fire Bolt,11,2000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_FIREBOLT",5; },{},{}
 692,Wind_Scroll_1_3,Level 3 Lightening Bolt,11,1000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_LIGHTNINGBOLT",3; },{},{}
 693,Wind_Scroll_1_5,Level 5 Lightening Bolt,11,2000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_LIGHTNINGBOLT",5; },{},{}
-694,Ghost_Scroll_1_3,Level 3 Soul Strike,11,1000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_SOULSTRIKE",3; },{},{}
-695,Ghost_Scroll_1_5,Level 5 Soul Strike,11,2000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_SOULSTRIKE",5; },{},{}
+694,Ghost_Scroll_1_3,Espíritos Anciões Nível 3,11,1000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_SOULSTRIKE",3; },{},{}
+695,Ghost_Scroll_1_5,Espíritos Anciões Nível 5,11,2000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_SOULSTRIKE",5; },{},{}
 696,Fire_Scroll_2_1,Level 1 Fire Ball,11,1000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_FIREBALL",1; },{},{}
 697,Fire_Scroll_2_5,Level 5 Fire Ball,11,2000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_FIREBALL",5; },{},{}
 698,Fire_Scroll_3_1,Level 1 Fire Wall,11,1000,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MG_FIREWALL",1; },{},{}
@@ -266,7 +266,7 @@
 909,Jellopy,Jellopy,3,6,,10,,,,,,,,,,,,,{},{},{}
 910,Garlet,Garlet,3,40,,10,,,,,,,,,,,,,{},{},{}
 911,Scell,Scell,3,160,,10,,,,,,,,,,,,,{},{},{}
-912,Zargon,Zargon,3,480,,10,,,,,,,,,,,,,{},{},{}
+912,Zargon,Zargônio,3,480,,10,,,,,,,,,,,,,{},{},{}
 913,Tooth_Of_Bat,Tooth of Bat,3,34,,10,,,,,,,,,,,,,{},{},{}
 914,Fluff,Fluff,3,8,,10,,,,,,,,,,,,,{},{},{}
 915,Chrysalis,Chrysalis,3,8,,10,,,,,,,,,,,,,{},{},{}
@@ -325,16 +325,16 @@
 970,Alchol,Alcohol,3,400,,30,,,,,,,,,,,,,{},{},{}
 971,Detrimindexta,Detrimindexta,3,400,,30,,,,,,,,,,,,,{},{},{}
 972,Karvodailnirol,Karvodailnirol,3,400,,30,,,,,,,,,,,,,{},{},{}
-973,Counteragent,Counteragent,3,800,,70,,,,,,,,,,,,,{},{},{}
-974,Mixture,Mixture,3,800,,70,,,,,,,,,,,,,{},{},{}
-975,Scarlet_Dyestuffs,Scarlet Dyestuffs,3,8000,,150,,,,,,,,,,,,,{},{},{}
-976,Lemon_Dyestuffs,Lemon Dyestuffs,3,8000,,150,,,,,,,,,,,,,{},{},{}
-978,Cobaltblue_Dyestuffs,Cobaltblue Dyestuffs,3,8000,,150,,,,,,,,,,,,,{},{},{}
-979,Darkgreen_Dyestuffs,Darkgreen Dyestuffs,3,8000,,150,,,,,,,,,,,,,{},{},{}
-980,Orange_Dyestuffs,Orange Dyestuffs,3,8000,,150,,,,,,,,,,,,,{},{},{}
-981,Violet_Dyestuffs,Violet Dyestuffs,3,8000,,150,,,,,,,,,,,,,{},{},{}
-982,White_Dyestuffs,White Dyestuffs,3,8000,,150,,,,,,,,,,,,,{},{},{}
-983,Black_Dyestuffs,Black Dyestuffs,3,8000,,150,,,,,,,,,,,,,{},{},{}
+973,Counteragent,Antígeno,3,800,,70,,,,,,,,,,,,,{},{},{}
+974,Mixture,Mistura,3,800,,70,,,,,,,,,,,,,{},{},{}
+975,Scarlet_Dyestuffs,Tintura Vermelha,3,8000,,150,,,,,,,,,,,,,{},{},{}
+976,Lemon_Dyestuffs,Tintura Amarela,3,8000,,150,,,,,,,,,,,,,{},{},{}
+978,Cobaltblue_Dyestuffs,Tintura Azul,3,8000,,150,,,,,,,,,,,,,{},{},{}
+979,Darkgreen_Dyestuffs,Tintura Verde,3,8000,,150,,,,,,,,,,,,,{},{},{}
+980,Orange_Dyestuffs,Tintura Laranja,3,8000,,150,,,,,,,,,,,,,{},{},{}
+981,Violet_Dyestuffs,Tintura Violeta,3,8000,,150,,,,,,,,,,,,,{},{},{}
+982,White_Dyestuffs,Tintura Branca,3,8000,,150,,,,,,,,,,,,,{},{},{}
+983,Black_Dyestuffs,Tintura Preta,3,8000,,150,,,,,,,,,,,,,{},{},{}
 984,Oridecon,Oridecon,3,1100,,200,,,,,,,,,,,,,{},{},{}
 985,Elunium,Elunium,3,1100,,200,,,,,,,,,,,,,{},{},{}
 986,Anvil,Anvil,3,30000,,500,,,,,,,,,,,,,{},{},{}
@@ -390,7 +390,7 @@
 1036,Dragon_Scale,Dragon Scale,3,500,,10,,,,,,,,,,,,,{},{},{}
 1037,Dragon_Train,Dragon Tail,3,1200,,10,,,,,,,,,,,,,{},{},{}
 1038,Petite_DiablOfs_Horn,Little Evil Horn,3,528,,10,,,,,,,,,,,,,{},{},{}
-1039,Petite_DiablOfs_Wing,Little Evil Wing,3,2000,,10,,,,,,,,,,,,,{},{},{}
+1039,Petite_DiablOfs_Wing,Pequena Asa Maligna,3,2000,,10,,,,,,,,,,,,,{},{},{}
 1040,Elder_Pixie's_Beard,Elder Pixie's Moustache,3,232,,10,,,,,,,,,,,,,{},{},{}
 1041,Lantern,Lantern,3,250,,10,,,,,,,,,,,,,{},{},{}
 1042,Short_Leg,Bug Leg,3,430,,10,,,,,,,,,,,,,{},{},{}
@@ -410,7 +410,7 @@
 1056,Grit,Grit,3,306,,10,,,,,,,,,,,,,{},{},{}
 1057,Moth_Dust,Moth Dust,3,138,,10,,,,,,,,,,,,,{},{},{}
 1058,Wing_Of_Moth,Moth Wings,3,200,,10,,,,,,,,,,,,,{},{},{}
-1059,Transparent_Cloth,Fabric,3,306,,10,,,,,,,,,,,,,{},{},{}
+1059,Transparent_Cloth,Tecido,3,306,,10,,,,,,,,,,,,,{},{},{}
 1060,Golden_Hair,Golden Hair,3,430,,10,,,,,,,,,,,,,{},{},{}
 1061,Starsand_Of_Witch,Witched Starsand,3,484,,10,,,,,,,,,,,,,{},{},{}
 1062,Pumpkin_Head,Jack o' Pumpkin,3,374,,10,,,,,,,,,,,,,{},{},{}
@@ -1461,7 +1461,7 @@
 2252,Star_Sparkling,Wizard Hat,4,20,,300,,7,,0,0x00810204,63,2,256,,0,1,36,{ bonus bMaxSP,100; },{},{}
 2253,Sunflower,Sunflower,4,20,,100,,1,,0,0xFFFFFFFF,63,2,256,,0,0,37,{ bonus2 bSubRace,RC_Insect,10; },{},{}
 2254,Angelic_Chain,Angel Wing,4,20,,100,,4,,0,0xFFFFFFFE,63,2,256,,0,1,38,{ bonus bMdef,3; bonus bAgi,1; bonus bLuk,1; bonus2 bSubRace,RC_Demon,3; },{},{}
-2255,Satanic_Chain,Evil Wing,4,20,,100,,6,,0,0xFFFFFFFE,63,2,256,,0,1,39,{ bonus bMdef,2; bonus bStr,1; bonus2 bSubRace,RC_Angel,3; },{},{}
+2255,Satanic_Chain,Asas de Demônio,4,20,,100,,6,,0,0xFFFFFFFE,63,2,256,,0,1,39,{ bonus bMdef,2; bonus bStr,1; bonus2 bSubRace,RC_Angel,3; },{},{}
 2256,Magestic_Goat,Majestic Goat,4,20,,800,,9,,0,0x006444A2,63,2,256,,0,1,41,{ bonus bStr,1; },{},{}
 2257,Snowy_Horn,Unicorn Horn,4,20,,100,,4,,0,0xFFFFFFFF,63,2,256,,0,1,42,{},{},{}
 2258,Sharp_Gear,Spiky Band,4,20,,1000,,12,,0,0x0066D5F2,63,2,256,,50,1,43,{},{},{}
@@ -1480,7 +1480,7 @@
 2271,Jack_A_Dandy,Jack be Dandy,4,45000,,100,,1,,0,0xFFFFFFFE,63,2,256,,0,0,58,{},{},{}
 2272,Stop_Post,Stop Post,4,20,,400,,1,,0,0xFFFFFFFF,63,2,256,,0,1,59,{},{},{}
 2273,Doctor_Cap,Doctor Band,4,20,,100,,5,,0,0xFFFFFFFE,63,2,256,,0,1,60,{ bonus bInt,1; },{},{}
-2274,Ghost_Bandana,Ghost Bandana,4,20,,100,,0,,0,0xFFFFFFFE,63,2,256,,0,1,61,{ bonus bAgi,2; bonus2 bSubEle,Ele_Ghost,15; },{},{}
+2274,Ghost_Bandana,Faixa de Fantasma,4,20,,100,,0,,0,0xFFFFFFFE,63,2,256,,0,1,61,{ bonus bAgi,2; bonus2 bSubEle,Ele_Ghost,15; },{},{}
 2275,Red_Bandana,Red Bandana,4,20,,100,,4,,0,0xFFFFFFFF,63,2,256,,0,1,62,{},{},{}
 2276,Eagle_Eyes,Angled Glasses,4,20,,100,,2,,0,0xFFFFFFFF,63,2,512,,0,0,63,{},{},{}
 2277,Nurse_Cap,Nurse Cap,4,20,,100,,4,,0,0x00008110,63,2,256,,0,1,64,{ bonus bInt,1; },{},{}
@@ -1544,7 +1544,7 @@
 2333,Silver_Robe_,Silver Robe,4,7000,,700,,23,,1,0x00810204,63,2,16,,0,1,0,{},{},{}
 2334,Mage_Coat,Mage Coat,4,20,,600,,40,,0,0x00810204,63,2,16,,50,1,0,{ bonus bMdef,5; bonus bInt,1; },{},{}
 2335,Thief_Clothes,Thief Clothes,4,74000,,100,,40,,0,0x02021040,63,2,16,,0,1,0,{ bonus bAgi,1; },{},{}
-2336,Thief_Clothes_,Thief Clothes,4,74000,,100,,40,,1,0x02021040,63,2,16,,0,1,0,{ bonus bAgi,1; },{},{}
+2336,Thief_Clothes_,Traje de Gatuno,4,74000,,100,,40,,1,0x02021040,63,2,16,,0,1,0,{ bonus bAgi,1; },{},{}
 2337,Ninja_Suit,Ninja Suit,4,20,,1500,,58,,0,0x02021040,63,2,16,,50,1,0,{ bonus bAgi,1; bonus bMdef,3; },{},{}
 2338,Wedding_Dress,Wedding Dress,4,43000,,500,,10,,0,0xFFFFFFFE,63,2,16,,0,1,0,{ bonus bMdef,15; },{},{}
 2339,G_Strings,Pantie,4,1000,,100,,22,,0,0xFFFFFFFF,63,2,16,,0,1,0,{},{},{}
@@ -2236,7 +2236,7 @@
 4044,Smokie_Card,Smokie Card,6,20,,10,,,,,,,,136,,,,,{ skill "TF_HIDING",1; },{},{ sc_end SC_HIDING; }
 4045,Horn_Card,Horn Card,6,20,,10,,,,,,,,32,,,,,{ bonus bLongAtkDef,35; },{},{}
 4046,Martin_Card,Martin Card,6,20,,10,,,,,,,,769,,,,,{ bonus2 bResEff,Eff_Blind,2000; bonus bDef,1; },{},{}
-4047,Ghostring_Card,Ghostring Card,6,20,,10,,,,,,,,16,,,,,{ bonus bDefEle,Ele_Ghost; bonus bHPrecovRate,-25; },{},{}
+4047,Ghostring_Card,Carta Ghostring,6,20,,10,,,,,,,,16,,,,,{ bonus bDefEle,Ele_Ghost; bonus bHPrecovRate,-25; },{},{}
 4048,Poison_Spore_Card,Poison Spore Card,6,20,,10,,,,,,,,136,,,,,{ skill "TF_POISON",3; },{},{}
 4049,Vadon_Card,Vadon Card,6,20,,10,,,,,,,,2,,,,,{ bonus2 bAddEle,Ele_Fire,20; },{},{}
 4050,Thief_Bug_Male_Card,Male Thief Bug Card,6,20,,10,,,,,,,,64,,,,,{ bonus bAgi,2; },{},{}
@@ -2363,7 +2363,7 @@
 4171,Dark_Priest_Card,Dark Priest Card,6,20,,10,,,,,,,,2,,,,,{ bonus2 bSPVanishRate,50,10; if(BaseJob==Job_Sage) bonus bSPDrainValue,1; },{},{}
 4172,The_Paper_Card,The Paper Card,6,20,,10,,,,,,,,2,,,,,{ bonus bCritAtkRate,20; bonus bSPDrainValue,-1; },{},{}
 4173,Demon_Pungus_Card,Demon Pungus Card,6,20,,10,,,,,,,,16,,,,,{ bonus2 bAddEffWhenHit,Eff_Sleep,600; },{},{}
-4174,Deviling_Card,Deviling Card,6,20,,10,,,,,,,,4,,,,,{ bonus2 bSubEle,Ele_Neutral,50; bonus2 bSubEle,Ele_Water,-50; bonus2 bSubEle,Ele_Earth,-50; bonus2 bSubEle,Ele_Fire,-50; bonus2 bSubEle,Ele_Wind,-50; bonus2 bSubEle,Ele_Poison,-50; bonus2 bSubEle,Ele_Holy,-50; bonus2 bSubEle,Ele_Dark,-50; bonus2 bSubEle,Ele_Ghost,-50; bonus2 bSubEle,Ele_Undead,-50; },{},{}
+4174,Deviling_Card,Carta Deviling,6,20,,10,,,,,,,,4,,,,,{ bonus2 bSubEle,Ele_Neutral,50; bonus2 bSubEle,Ele_Water,-50; bonus2 bSubEle,Ele_Earth,-50; bonus2 bSubEle,Ele_Fire,-50; bonus2 bSubEle,Ele_Wind,-50; bonus2 bSubEle,Ele_Poison,-50; bonus2 bSubEle,Ele_Holy,-50; bonus2 bSubEle,Ele_Dark,-50; bonus2 bSubEle,Ele_Ghost,-50; bonus2 bSubEle,Ele_Undead,-50; },{},{}
 4175,Poison_Toad_Card,Poisonous Toad Card,6,20,,10,,,,,,,,136,,,,,{ bonus3 bAutoSpell,"TF_POISON",1,20; bonus2 bAddSkillBlow,52,5; },{},{}
 4176,Dullahan_Card,Dullahan Card,6,20,,10,,,,,,,,2,,,,,{ bonus bCritAtkRate,10; bonus2 bCriticalAddRace,RC_Dragon,7; },{},{}
 4177,Dryad_Card,Dryad Card,6,20,,10,,,,,,,,769,,,,,{ bonus3 bAddMonsterDropItem,993,RC_Plant,100; bonus2 bSubEle,Ele_Earth,10; },{},{}
@@ -4992,7 +4992,7 @@
 7020,Mother's_Nightmare,Mother's Nightmare,3,20,,10,,,,,,,,,,,,,{},{},{}
 7021,Foolishness_Of_Blind,Foolishness of the Blind,3,20,,10,,,,,,,,,,,,,{},{},{}
 7022,Old_Hilt,Old Hilt,3,150,,30,,,,,,,,,,,,,{},{},{}
-7023,Blade_Lost_In_Darkness,Blade Lost in Darkness,3,12000,,40,,,,,,,,,,,,,{},{},{}
+7023,Blade_Lost_In_Darkness,Lâmina Perdida nas Trevas,3,12000,,40,,,,,,,,,,,,,{},{},{}
 7024,Bloody_Edge,Bloody Edge,3,10000,,40,,,,,,,,,,,,,{},{},{}
 7025,Lucifer's_Lament,Lucifer's Lament,3,30000,,50,,,,,,,,,,,,,{},{},{}
 7026,Key_Of_Clock_Tower,Key of Clock Tower,3,100,,30,,,,,,,,,,,,,{},{},{}
@@ -12451,3 +12451,6 @@
 32005,Illusion_Pole_Axe,Illusion Pole Axe,5,0,,1500,190,,3,2,0x00004082,63,2,2,4,120,1,4,{ .@r = getrefine(); bonus bStr,3; bonus bInt,2; bonus bDex,2; if (.@r >= 13) { .@val = -2000; } else if (.@r >= 9) { .@val = -1000; } bonus2 bSkillCooldown,"RK_HUNDREDSPEAR",.@val; },{},{}
 //
 32237,Celine's_Brooch,Celine's Brooch,4,10,,500,,0,,1,0xFFFFFFFE,63,2,136,,100,0,0,{ bonus bMatkRate,5; bonus bVariableCastrate,-10; },{},{}
+
+//CASH TICKETS
+32130,Update_Ticket,Ticket de CASH [1000],0,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ set #CASHPOINTS,#CASHPOINTS+1000; dispbottom "Você recebeu 1.000 CASH points!"; },{},{}

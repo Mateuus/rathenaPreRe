@@ -93,25 +93,25 @@ prontera,160,133,2	script	YuPi#pront	102,{
 
 prontera,149,202,2	script	YuNa#pront	700,{
 	mes "[YuNa]";
-	mes "Behold...";
-	mes "Mighty Odin!";
-	mes "God of wisdom!";
-	mes "God of war!";
+	mes "Eis o...";
+	mes "Poderoso Odin!";
+	mes "Deus da sabedoria!";
+	mes "Deus da Guerra!";
 	next;
 	mes "[YuNa]";
-	mes "Here, in Rune-Midgard, we serve Odin, the fearsome god who sacrificed one of his eyes in order to acquire wisdom.";
+	mes "Aqui, em Rune-Midgard, servimos Odin, o temível deus que sacrificou um de seus olhos para adquirir sabedoria.";
 	next;
 	mes "[YuNa]";
-	mes "The statue you see behind of me is a sculpture of mighty Odin. But, it's a shame because it's such a bad likeness.";
+	mes "A estátua que você vê atrás de mim é uma escultura do poderoso Odin. Mas é uma pena porque é uma má imagem.";
 	next;
 	mes "[YuNa]";
-	mes "I mean, this statue is totally different from our image of Odin. I guess the sculptor took too many artistic liberties.";
+	mes "Quero dizer, esta estátua é totalmente diferente da nossa imagem de Odin. Eu acho que o escultor tomou muitas liberdades artísticas.";
 	next;
 	mes "[YuNa]";
-	mes "I bet the first time you saw this statue, you thought, '^3355FFOh, what a nice muscle man on a horse^000000.'";
+	mes "Eu aposto a primeira vez que você viu esta estátua, você pensou, '^3355FFOh, que bom homem musculoso em um cavalo^000000.'";
 	next;
 	mes "[YuNA]";
-	mes "But this statue is obviously not muscular enough, not godly enough to fairly represent a god! Maybe if he had a halo?";
+	mes "Mas esta estátua obviamente não é musculosa o suficiente, não é piedosa o bastante para representar um deus! Talvez se ele tivesse uma auréola?";
 	close;
 }
 
