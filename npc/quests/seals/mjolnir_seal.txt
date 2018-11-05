@@ -26,19 +26,19 @@
 
 prontera,124,297,3	script	Tialfi	706,{
 	if (checkweight(1301,3) == 0) {
-		mes "- You are carrying too many items! -";
+		mes "- Você está carregando muitos itens! -";
 		close;
 	}
 	if ($God3 < $@god_check1) {
 		cutin "god_tialpi01",2;
 		mes "[Tialfi]";
 		mes "Hmmm...";
-		mes "I can feel a strange force growing stronger and stronger, somewhere in Rune-Midgard.";
+		mes "Eu posso sentir uma força estranha crescendo cada vez mais em algum lugar de Rune-Midgard.";
 		next;
 		mes "[Tialfi]";
-		mes "Can you feel it?";
-		mes "Something must be";
-		mes "going on!";
+		mes "Você está sentindo?";
+		mes "Alguma coisa deve estar";
+		mes "acontecendo!";
 	}
 	else {
 		if (god_mjo_0 == 11) {

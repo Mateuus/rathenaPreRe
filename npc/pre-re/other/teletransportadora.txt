@@ -159,7 +159,7 @@ hugel,88,151,5	duplicate(cWarp)	Teletransportadora#13	721
 lighthalzen,155,79,6	duplicate(cWarp)	Teletransportadora#14	721
 louyang,210,106,4	duplicate(cWarp)	Teletransportadora#15	721
 morocc,154,97,4	duplicate(cWarp)	Teletransportadora#16	721
-prontera,161,192,4	duplicate(cWarp)	Teletransportadora#17	94
+prontera,158,193,4	duplicate(cWarp)	Teletransportadora#17	94
 payon,182,110,4	duplicate(cWarp)	Teletransportadora#18	721
 umbala,132,130,4	duplicate(cWarp)	Teletransportadora#19	721
 xmas,150,136,4	duplicate(cWarp)	Teletransportadora#20	721

@@ -17,7 +17,7 @@
 //= 3.0 Migrate/Integrate to Global Functions. [mazvi]
 //============================================================
 
-prontera,149,186,4	script	Habilidades de Platina	94,{
+prontera,150,193,4	script	Habilidades de Platina	646,{
 	mes "[Habilidades de Platina]";
 	mes "Eu posso te dar as habilidades especiais disponíveis para o seu trabalho.";
 	mes "Você gostaria dessas habilidades agora?";

@@ -38,7 +38,7 @@
 		sc_start SC_BLESSING,240000,10;
 	}
 	if (.@Delay)
-		@HD = gettimetick(2) + .@Delay;
+		set @HD = gettimetick(2) + .@Delay;
 	end;
 }
 

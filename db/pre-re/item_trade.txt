@@ -572,7 +572,7 @@
 6124,507,100	// Wolf Flute
 6151,499,100	// Giant Bradium Fragment
 6152,499,100	// Glittering Crystal
-6153,507,100	// Special Exchange Ticket
+//6153,507,1	// Special Exchange Ticket
 6154,499,100	// Broken Horn Pipe
 6156,499,100	// Approval Report
 6266,507,100	// Key Of Deception
