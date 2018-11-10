@@ -1,5 +1,5 @@
 //===== rAthena Script =======================================
-//= Mapflag: Disable skill use.
+//= Mapflag: Disable vending use.
 //===== By: ==================================================
 //= rAthena Dev Team
 //===== Current Version: =====================================
@@ -7,27 +7,10 @@
 //===== Compatible With: =====================================
 //= rAthena Project
 //===== Description: ========================================= 
-//= Disables all skills on the map.
+//= Disables all vending on the map.
 //===== Additional Comments: ================================= 
-//= 1.1 Added additional maps. [L0ne_W0lf]
 //============================================================
 
 //Prontera Arena ===============
-prt_are_in	mapflag	noskill
-prontera	mapflag	noskill
-
-//The Sign Quest ===============
-himinn	mapflag	noskill
-
-// Quiz Maps ===================
-quiz_00	mapflag	noskill
-quiz_01	mapflag	noskill
-quiz_02	mapflag	noskill
-quiz_test	mapflag	noskill
-
-//Hugel Minigames ==============
-que_bingo	mapflag	noskill
-p_track01	mapflag	noskill
-p_track02	mapflag	noskill
-
-//evt_zombie	mapflag	noskill
+prontera	mapflag	novending
+prt_in	mapflag	novending

@@ -1,0 +1,132 @@
+//===== rAthena Script =======================================
+//= Curandeira
+//===== By: ==================================================
+//= Euphy
+//===== Current Version: =====================================
+//= 1.1
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= Basic Curandeira script.
+//===== Additional Comments: =================================
+//= 1.0 Initial script.
+//= 1.1 Aligned coordinates with @go.
+//============================================================
+
+-	script	Curandeira	-1,{
+
+	.@Price = 0;	// Zeny required for heal
+	.@Buffs = 1;	// Also buff players? (1: yes / 0: no)
+	.@Delay = 5;	// Heal delay, in seconds
+	
+
+	if (@HD > gettimetick(2)) {
+		.@Conta = @HD-(gettimetick(2));
+		dispbottom "[Curandeira] Aguardem "+.@Conta+" segundos.";
+		end;
+	}
+		
+			
+	if (.@Price) {
+		message strcharinfo(0), "Healing costs " + callfunc("F_InsertComma",.@Price) + " Zeny.";
+		if (Zeny < .@Price)
+			end;
+		if (select("^0055FFHeal^000000:^777777Cancel^000000") == 2)
+			end;
+		Zeny -= .@Price;
+	}
+	specialeffect2 EF_HEAL2;
+	percentheal 100,100;
+
+	if (.@Buffs) {
+		 if(BaseLevel < 50) {
+		    specialeffect2 EF_INCAGILITY; sc_start SC_INCREASEAGI,900000,10;
+			specialeffect2 EF_BLESSING; sc_start SC_BLESSING,900000,10;
+			specialeffect2 EF_ANGELUS; sc_start SC_ANGELUS,900000,10;
+			specialeffect2 EF_SUFFRAGIUM; sc_start SC_SUFFRAGIUM,900000,3;
+			specialeffect2 EF_IMPOSITIO; sc_start SC_IMPOSITIO,900000,5;
+			specialeffect2 EF_GLORIA; sc_start SC_GLORIA,900000,5;
+			specialeffect2 EF_MAGNIFICAT; sc_start SC_MAGNIFICAT,900000,5;
+			specialeffect2 EF_ASSUMPTIO; sc_start SC_ASSUMPTIO,900000,5;
+			sc_start SC_ADRENALINE2,900000,1;
+			sc_start SC_KAUPE,900000,3;
+			sc_start SC_KAITE,900000,7;
+			sc_start SC_STRFOOD,900000,5;
+			sc_start SC_AGIFOOD,900000,5;
+			sc_start SC_VITFOOD,900000,5;
+			sc_start SC_INTFOOD,900000,5;
+			sc_start SC_DEXFOOD,900000,5;
+			sc_start SC_LUKFOOD,900000,5;
+			dispbottom "[Curandeira] Continue se esforçado até chegar ao level 175.";
+		}else{		   
+		   	if (getgroupid() < 1){
+			   specialeffect2 EF_INCAGILITY; sc_start SC_INCREASEAGI,450000,10;
+			   specialeffect2 EF_BLESSING; sc_start SC_BLESSING,450000,10;
+			   specialeffect2 EF_ANGELUS; sc_start SC_ANGELUS,450000,10;
+			} else {
+				specialeffect2 EF_INCAGILITY; sc_start SC_INCREASEAGI,900000,10;
+				specialeffect2 EF_BLESSING; sc_start SC_BLESSING,900000,10;
+				specialeffect2 EF_ANGELUS; sc_start SC_ANGELUS,900000,10;
+				specialeffect2 EF_SUFFRAGIUM; sc_start SC_SUFFRAGIUM,900000,3;
+				specialeffect2 EF_IMPOSITIO; sc_start SC_IMPOSITIO,900000,5;
+				specialeffect2 EF_GLORIA; sc_start SC_GLORIA,900000,5;
+				specialeffect2 EF_MAGNIFICAT; sc_start SC_MAGNIFICAT,900000,5;
+			}
+		   
+		}
+	
+	}
+	
+	if(getbrokenid(1)){
+		repairall;
+	}else{
+		dispbottom "[Curandeira] Você não tem itens para reparar.";
+	}
+	
+	if (.@Delay)
+		@HD = gettimetick(2) + .@Delay;
+	end;
+}
+
+
+// Duplicates
+//============================================================
+alberta,25,240,6	duplicate(Curandeira)	Curandeira#alb	936
+aldebaran,135,118,6	duplicate(Curandeira)	Curandeira#alde	936
+amatsu,200,79,4	duplicate(Curandeira)	Curandeira#ama	936
+ayothaya,207,169,6	duplicate(Curandeira)	Curandeira#ayo	936
+comodo,184,158,6	duplicate(Curandeira)	Curandeira#com	936
+einbech,57,36,6	duplicate(Curandeira)	Curandeira#einbe	936
+einbroch,57,202,6	duplicate(Curandeira)	Curandeira#einbr	936
+geffen,115,72,6	duplicate(Curandeira)	Curandeira#gef	936
+gonryun,156,122,6	duplicate(Curandeira)	Curandeira#gon	936
+hugel,89,150,6	duplicate(Curandeira)	Curandeira#hug	936
+izlude,121,150,6	duplicate(Curandeira)	Curandeira#izl	936	//Pre-RE: (125,118)
+jawaii,250,139,4	duplicate(Curandeira)	Curandeira#jaw	936
+lighthalzen,152,100,6	duplicate(Curandeira)	Curandeira#lhz	936
+louyang,226,103,4	duplicate(Curandeira)	Curandeira#lou	936
+manuk,272,144,6	duplicate(Curandeira)	Curandeira#man	936
+mid_camp,203,289,6	duplicate(Curandeira)	Curandeira#mid	936
+moc_ruins,72,164,4	duplicate(Curandeira)	Curandeira#moc	936
+morocc,153,97,6	duplicate(Curandeira)	Curandeira#mor	936
+moscovia,220,191,4	duplicate(Curandeira)	Curandeira#mos	936
+niflheim,212,182,5	duplicate(Curandeira)	Curandeira#nif	936
+payon,179,106,4	duplicate(Curandeira)	Curandeira#pay	936
+prontera,162,194,4	duplicate(Curandeira)	Curandeira#prt	936
+rachel,125,116,6	duplicate(Curandeira)	Curandeira#rac	936
+splendide,201,153,4	duplicate(Curandeira)	Curandeira#spl	936
+thor_camp,249,74,4	duplicate(Curandeira)	Curandeira#thor	936
+umbala,105,148,3	duplicate(Curandeira)	Curandeira#umb	936
+veins,217,121,4	duplicate(Curandeira)	Curandeira#ve	936
+xmas,143,136,4	duplicate(Curandeira)	Curandeira#xmas	936
+yuno,164,45,4	duplicate(Curandeira)	Curandeira#yuno	936
+
+// Duplicates (Renewal)
+//============================================================
+brasilis,194,221,6	duplicate(Curandeira)	Curandeira#bra	936
+dewata,195,187,4	duplicate(Curandeira)	Curandeira#dew	936
+dicastes01,201,194,4	duplicate(Curandeira)	Curandeira#dic	936
+ecl_in01,45,60,4	duplicate(Curandeira)	Curandeira#ecl	936
+malangdo,132,114,6	duplicate(Curandeira)	Curandeira#mal	936
+malaya,227,204,6	duplicate(Curandeira)	Curandeira#ma	936
+mora,55,152,4	duplicate(Curandeira)	Curandeira#mora	936

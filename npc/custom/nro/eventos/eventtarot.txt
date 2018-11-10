@@ -157,9 +157,9 @@ OnClock1918:
 						deletearray $@tarot_participantes$[.@p], 1;
 						percentheal -99,-99;
 						sleep2 1500;
-						set @randtarot, rand(1,3);
-						set #CASHPOINTS, #CASHPOINTS+@randtarot;
-						dispbottom "Você recebeu ["+@randtarot+"] CASHPOINTS por participar do evento (Tarot).";
+						//set @randtarot, rand(1,3);
+						//set #CASHPOINTS, #CASHPOINTS+@randtarot;
+						//dispbottom "Você recebeu ["+@randtarot+"] CASHPOINTS por participar do evento (Tarot).";
 						warp "SavePoint",0,0;
 					}
 				}

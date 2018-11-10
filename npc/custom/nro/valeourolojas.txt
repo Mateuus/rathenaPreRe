@@ -1,3 +1,4 @@
+/*
 prontera,141,178,6	script	Central de Prêmios	625,{
 
 set .np$,"[ ^FF1493Central de Prêmios^000000 ]";		// Nome do NPC.
@@ -13,7 +14,7 @@ E_ICL:
 E_C:
 	close;
 }
-
+*/
 
 
 -	shop	PSHOP1	-1,512:-1
