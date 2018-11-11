@@ -18,68 +18,68 @@
 -	script	Leablem#dummy::SocketEnchant2	-1,{
 	if (checkweight(1201,1) == 0)
 	{
-		mes "- Wait a minute !! -";
-		mes "- Currently you're carrying -";
-		mes "- too many items with you. -";
-		mes "- Please try again -";
-		mes "- after you lose some weight. -";
+		mes "- Espere um minuto !! -";
+		mes "- Atualmente você está carregando -";
+		mes "- muitos items. -";
+		mes "- Por favor tente novamente -";
+		mes "- depois que você diminuir o seu peso. -";
 		close;
 	}
 	mes "[Leablem]";
-	mes "Good day. My name is Leablem,";
-	mes "and I'm a technician that specializes in";
-	mes "adding slots to weapons and armors.";
-	mes "It can be very hard sometimes, but I like";
-	mes "what I do, and take pride in it.";
+	mes "Bom dia. Meu nome é Leablem,";
+	mes "e eu sou um técnico que especializa em";
+	mes "adicionar slots/encaixes à armas e armaduras.";
+	mes "Pode ser muito difícil as vezes, mas eu gosto";
+	mes "do que eu faço, tenho orgulho nisso.";
 	next;
 	mes "[Leablem]";
-	mes "I've learned most of the things from my brother, Seyablem,";
-	mes "but I think I still have a lot to learn.";
-	mes "So please understand my slotting services are limited,";
-	mes "unlike my brother Seyablem.";
+	mes "Eu aprendi a maioria das coisas com meu irmão, Seyablem,";
+	mes "mas eu acho que ainda tenho muito para aprender.";
+	mes "Então por favor, entenda que meu serviço de encaixe é limitado,";
+	mes "ao invés do meu irmão Seyablem.";
 	next;
 	mes "[Leablem]";
-	mes "My brother wasn't so happy to teach me";
-	mes "his skills because he was worried that his skills";
-	mes "wouldn't be unique anymore. He did, however, his best";
-	mes "to teach me.";
+	mes "Meu irmão não estava muito feliz em me ensinar";
+	mes "suas habilidades porque ele estava preocupado que suas habilidades";
+	mes "não seriam mais únicas. Mas mesmo assim ele tentou seu máximo";
+	mes "em me ensinar.";
 	next;
 	mes "[Leablem]";
-	mes "Thanks to him, I've learned lots of things.";
-	mes "I'm not very confident";
-	mes "in trying many different things,";
-	mes "but I'll do what";
-	mes "I can do for now.";
+	mes "Graças a ele, Eu aprendi muitas coisas.";
+	mes "Eu não sou muito confiante";
+	mes "em tentar coisas diferentes,";
+	mes "mas eu vou fazer o que";
+	mes "eu posso por enquanto.";
 	next;
 	mes "[Leablem]";
-	mes "In fact, there's one thing";
-	mes "that my brother doesn't want me to do.";
-	mes "I don't want to upset him, so...let's just skip that part.";
-	mes "I'll say no more about it!";
+	mes "Aliás, tem uma coisa";
+	mes "que meu irmão não quer que eu faça.";
+	mes "Eu não quero aborrecer ele, então...vamos pular essa parte.";
+	mes "Eu não vou falar mais nada!";
 	next;
 	mes "[Leablem]";
-	mes "Anyways, do you have any equipment";
-	mes "which you'd like to add to the slots?";
-	mes "My service charge, the materials,";
-	mes "and the success chance all depend on";
-	mes "the specific item I'm working on.";
+	mes "De qualquer forma, você tem algum equipamento";
+	mes "que você quer adicionar slots?";
+	mes "Minha comissão, os materiais,";
+	mes "e a chance de sucesso dependem do";
+	mes "item específico que irei trabalhar.";
 	next;
-	switch(select("Weapon:Armor:About that thing you skipped:More information:Quit"))
+	switch(select("Arma:Armadura:Sobre aquilo que você pulou:Mais informações:Sair"))
 	{
 		case 1:
 			mes "[Leablem]";
-			mes "Weapon, you said? Sure, no problem.";
-			mes "Weapons are divided into 4 different class";
-			mes "depending on the work difficulty.";
-			mes "C class is the easiest one, and S class is the hardest one.";
-			mes "Which class would you like to try?";
+			mes "Arma, você disse?, Tudo bem, sem problemas.";
+			mes "Armas são divididas em 4 classes";
+			mes "dependendo da dificuldade do trabalho.";
+			mes "A classe C é a mais fácil e a classe é a mais difícil.";
+			mes "Que classe você quer tentar?";
 			next;
 			switch(select("C:B:A:S"))
 			{
 				case 1:
 					mes "[Leablem]";
-					mes "C class, I see.";
-					mes "So, what kind of weapon do you have?";
+					mes "Classe C, tudo bem.";
+					mes "Então, que tipo de arma você tem?";
 					next;
 					switch(select("Book of Mother Earth:Book of Billows:Book of Gust of Wind:Book of the Blazing Sun"))
 					{
@@ -90,8 +90,8 @@
 					}
 				case 2:
 					mes "[Leablem]";
-					mes "You have chosen average B class.";
-					mes "So, what kind of weapon do you have?";
+					mes "Você escolheu a mediana classe B.";
+					mes "Então, que tipo de item você tem?";
 					next;
 					switch(select("Orcish Axe:Scimiter:Spike"))
 					{
@@ -101,8 +101,8 @@
 					}
 				case 3:
 					mes "[Leablem]";
-					mes "A class? You seem to want little too much. But, no problem.";
-					mes "So, what kind of weapon do you have?";
+					mes "Classe A? Você parece querer um pouco demais, Mas, sem problemas.";
+					mes "Então, que tipo de arma você tem?";
 					next;
 					switch(select("Dragon Killer:Katar of Quaking:Katar of Raging Blaze:Katar of Frozen Icicle:Katar of Piercing Wind:Golden Mace:Oriental Lute:Queen's Whip:Spectral Spear:Gae Bolg:Schweizersabel"))
 					{
@@ -120,8 +120,8 @@
 					}
 				case 4:
 					mes "[Leablem]";
-					mes "Huh, S Class?! Oh my god, are you serious?*Tremble*";
-					mes "So...which S class weapon would you like to make a slot?!";
+					mes "Huh, Classe S?! Meu Deus, é sério?*Treme*";
+					mes "Então...que arma classe S você quer que eu faça um slot?!";
 					next;
 					switch(select("Zephyrus:Mailbreaker:Dragon Slayer:Swordbreaker:Assasin Dagger:Grand Cross:Executioner"))
 					{
@@ -136,18 +136,18 @@
 			}
 		case 2:
 			mes "[Leablem]";
-			mes "Armor, you said? Sure, no problem.";
-			mes "Weapons are divided into 4 different class";
-			mes "depending on the work difficulty.";
-			mes "C class is the easiest one, and S class is the hardest one.";
-			mes "Which class would you like to try?";
+			mes "Você disse armadura? Claro, sem problemas.";
+			mes "Armaduras são divididas em 4 classes diferentes";
+			mes "dependendo da dificuldade do trabalho.";
+			mes "A classe C é a mais fácil e a classe S é a mais difícil.";
+			mes "Que classe de armadura você quer tentar?";
 			next;
 			switch(select("C:B:A:S"))
 			{
 				case 1:
 					mes "[Leablem]";
-					mes "C class, I see.";
-					mes "So, what kind of armor do you have?";
+					mes "Classe C, entendo.";
+					mes "Então, que tipo de armadura você tem?";
 					next;
 					switch(select("Sunflower:Ph.D Hat:Big Ribbon:Boys Cap"))
 					{
@@ -158,8 +158,8 @@
 					}
 				case 2:
 					mes "[Leablem]";
-					mes "You have chosen average B class.";
-					mes "So, what kind of armor do you have?";
+					mes "Você escolheu a classe B.";
+					mes "Então, que tipo de armadura você tem?";
 					next;
 					switch(select("Skull Ring:High Heels"))
 					{
@@ -168,8 +168,8 @@
 					}
 				case 3:
 					mes "[Leablem]";
-					mes "A class? You seem to want little too much. But, no problem.";
-					mes "So, what kind of armor do you have?";
+					mes "Classe A? Parece que você quer um pouco demais, Mas, tudo bem.o much.";
+					mes "Então, que tipo de armadura você tem?";
 					next;
 					switch(select("Pirate Bandana:Black Leather Boots"))
 					{
@@ -179,8 +179,8 @@
 					}
 				case 4:
 					mes "[Leablem]";
-					mes "Huh, S Class?! Oh my god, are you serious?*Tremble*";
-					mes "So...which S class armor would you like to make a slot?!";
+					mes "Huh, Classe S?! Meu Deus, você está brincando?*Treme*";
+					mes "Então...que armadura classe S você quer que eu faça um slot?!";
 					next;
 					switch(select("Mage Coat:Holy Robe:Sacred Mission:Undershirt:Pantie"))
 					{
@@ -193,16 +193,16 @@
 			}
 		case 3:
 			mes "[Leablem]";
-			mes "Oh, it's nothing special, but he thinks";
-			mes "it's not something for humans to mess with. ";
-			mes "I don't want to upset my brother,";
-			mes "so I'd better forget about it.";
+			mes "Ah, não é nada especial, mas ele acha";
+			mes "que não é algo que os humanos devem ficar mexendo. ";
+			mes "Eu não quero deixar ele bravo,";
+			mes "então é melhor eu esquecer isso.";
 			next;
 			mes "[Leablem]";
-			mes "...That service itself has a very high success chance,";
-			mes "but requires a lot of materials and a high-rate service charge. ";
-			mes "I highly doubt that anyone would actually want to use";
-			mes "the service, even if I did open it.";
+			mes "...Aquele serviço em si tem uma taxa de sucesso muito alta,";
+			mes "mas é necessário um monte de materiais e uma comissão alta. ";
+			mes "Eu duvido que alguém iria querer usar";
+			mes "o serviço, mesmo que eu disponibilizasse";
 			next;
 			mes "[Leablem]";
 			mes "...Ummm...";
@@ -214,24 +214,24 @@
 			mes ".............";
 			next;
 			mes "[Leablem]";
-			mes "You seem interested in using that service.";
-			mes "If you want, I can at least tell you about it. ";
-			mes "But you must promise to keep this a secret.";
-			mes "If my brother finds out what I'm about to tell you,";
-			mes "he's gonna give me a beating!";
+			mes "Você parece interessado em usar esse serviço.";
+			mes "Se você quiser, eu posso pelo menos te dizer sobre ele. ";
+			mes "Mas você precisa manter isso um segredo.";
+			mes "Se meu irmão descobrir sobre o que eu vou te dizer,";
+			mes "ele vai me bater!";
 			next;
 			mes "[Leablem]";
-			mes "This special service has a 90% success chance,";
-			mes "but requires 2 Gold and 2 hundred million zeny:";
-			mes "I can add slots to the Hat of the Sun God.";
+			mes "Esse serviço especial tem uma chance de sucesso de 90%,";
+			mes "mas é necessário 2 Ouros e 200 milhões de zeny:";
+			mes "Eu posso adicionar slots ao Chapéu do Deus do Sol.";
 			next;
 			mes "[Leablem]";
-			mes "My brother said that, even since ancient times, it's forbidden to modify that hat. ";
-			mes "But I believe humans are too curious not to";
-			mes "experiment, especially when it's forbidden.";
-			mes "I just don't want my brother to yell at me. That's all.";
+			mes "Meu irmão disse que, desde tempos antigos, é proibido modificar esse chapéu. ";
+			mes "Mas eu acredito que os humanos são muito curiosos para não tentar";
+			mes "experimentar, especialmente quando é proibido.";
+			mes "Eu apenas não quero que meu irmão grite comigo. Isso é tudo.";
 			next;
-			switch(select("Use the Service","Quit"))
+			switch(select("Usar o serviço","Sair"))
 			{
 				case 1:
 					mes "[Leablem]";
@@ -241,19 +241,19 @@
 					mes ".................";
 					next;
 					mes "[Leablem]";
-					mes "...Wh... What? No!";
-					mes "Giving me that dirty look";
-					mes "won't make me do it!";
-					mes "No, I said no! No is no! No!";
+					mes "...O qu... O quê? Não!";
+					mes "Me olhando torto";
+					mes "não vai fazer com que eu faça!";
+					mes "Não, Eu disse não! Não é não! Não!";
 					next;
 					mes "[Leablem]";
-					mes "No, I won't! No!";
+					mes "Não, Eu não vou! Não!";
 					next;
 					mes "[Leablem]";
-					mes "I can't do it...";
+					mes "Eu não posso fazer isso...";
 					next;
 					mes "[Leablem]";
-					mes "I can't do... It...";
+					mes "Eu não posso fazer... Isso...";
 					next;
 					mes "[Leablem]";
 					mes ".................";
@@ -262,57 +262,57 @@
 					mes "Umm...";
 					next;
 					mes "[Leablem]";
-					mes "You're so persistent. Okay, I'll make you an exception.";
-					mes "Just don't tell anyone,";
-					mes "especially my brother. Do you promise?";
+					mes "Você é tão persistente. Tudo bem, Eu vou fazer para você uma exceção.";
+					mes "Apenas não conte para niguém,";
+					mes "especialmente meu irmão. Você promete??";
 					next;
 					mes "[Leablem]";
-					mes "Okay then, please bring me";
-					mes "^FF00002 Gold, 2 hundred million zeny -- the service charge --,";
-					mes "^FF0000and a Hat of the Sun God.";
-					mes "^FF0000You know your chance of success is 90% with this, don't you?^000000";
-					mes "We don't have time to waste,";
-					mes "so let's get down to business right away.";
+					mes "Tudo bem então, Por favor me traga";
+					mes "^FF00002 Ouros, 200 milhões de zeny -- a comissão --,";
+					mes "^FF0000e um chapéu do Deus do Sol.";
+					mes "^FF0000Você sabe que a chance de sucesso é 90% com isso,não sabe?^000000";
+					mes "Nós não temos tempo para perder,";
+					mes "então vamos à trabalho logo.";
 					next;
 					if ((Zeny > 199999999) && (countitem(969) > 1) && (countitem(5022) > 0))
 					{
 						mes "[Leablem]";
-						mes "Shall we start now?";
-						mes "Pray to your gods for good luck.";
+						mes "Devemos começar??";
+						mes "Reze para seus Deuses por boa sorte.";
 						next;
 						set .@a, rand(1,100);
 						if ((.@a > 4) && (.@a < 95))
 						{
 							specialeffect EF_LORD;
 							mes "[Leablem]";
-							mes "Excellent! Wow, I guess the 90% success chance is true!";
-							mes "Look, the slot was added in the perfect place.";
-							mes "Congratulations.";
+							mes "Excelente! Nossa, eu acho que os 90% de chance de sucesso é verdade!!";
+							mes "Olha, o slot foi adicionado no local perfeito.";
+							mes "Parabéns.";
 							delitem 5022,1; //Helm_Of_Sun
 							delitem 969,2; //Gold
 							set Zeny, Zeny - 200000000;
 							getitem 5353,1; //Helm_Of_Sun_
 							next;
 							mes "[Leablem]";
-							mes "This is the first and last time I will do this for you.";
-							mes "Don't ever tell anyone";
-							mes "about this. Okay?";
+							mes "Essa é a primeira e última vez que eu vou fazer isso para você.";
+							mes "Nunca conte para ninguém";
+							mes "sobre isso, tudo bem?";
 							close;
 						}
 						else
 						{
 							specialeffect EF_SUI_EXPLOSION;
 							mes "[Leablem]";
-							mes "Wah! Oh my god, we failed!";
-							mes "My god, I guess we had the worst kind of luck...";
-							mes "What should we do? ...This is why";
-							mes "I didn't want to do in the first place!";
+							mes "Ah! Meu deus, nós falhamos!";
+							mes "Meu deus, Eu acho que nós tivemos o pior tipo de sorte...";
+							mes "O que devemos fazer? ...Deve ser por conta de que";
+							mes "Eu não queria fazer isso desde o começo!";
 							delitem 5022,1; //Helm_Of_Sun
 							delitem 969,2; //Gold
 							set Zeny, Zeny - 200000000;
 							next;
 							mes "[Leablem]";
-							mes "No, don't ever ask me to do such a risky thing again!";
+							mes "Não, nunca mais me pergunta para fazer algo tão arriscado novamente!";
 							mes "Bah~";
 							close;
 						}
@@ -323,59 +323,59 @@
 						mes "Umm...";
 						next;
 						mes "[Leablem]";
-						mes "You don't have enough materials.";
-						mes "Man, why did you even ask me to try?";
-						mes "I'm not going to do this again for you,";
-						mes "even if you bring enough materials. Bah~";
+						mes "Você não tem materiais suficientes.";
+						mes "Cara, por que voce se quer me perguntou para tentar?";
+						mes "Eu não vou fazer isso de novo para você,";
+						mes "mesmo se você trouxer materiais suficientes. Bah~";
 						close;
 					}
 				case 2:
 					mes "[Leablem]";
-					mes "Don't ever tell anyone";
-					mes "about what I told you. Okay?";
+					mes "Nunca conte isso para ninguém";
+					mes "sobre o que eu te disse. Tudo bem?";
 					close;
 			}
 		case 4:
 			mes "[Leablem]";
-			mes "Do you want to know more information?";
-			mes "Well, I don't think there's something";
-			mes "that you specifically need to know.";
-			mes "But I can at least give you a tip.";
+			mes "Você quer saber mais informações?";
+			mes "Bom, eu não acho que tem algo";
+			mes "que você precisa saber especificamente.";
+			mes "Mas eu vou te dar pelo menos uma dica.";
 			next;
 			mes "[Leablem]";
-			mes "The slot technicians in each town";
-			mes "provide different slotting success chances";
-			mes "depending on your equipment's upgrade level.";
-			mes "I don't know if that's true,";
-			mes "but I can see the difference in each town.";
+			mes "Os técnicos de slot em cada cidade";
+			mes "possuem diferentes chances de sucessos de criar slots";
+			mes "dependendo do nível do seu equipamento.";
+			mes "Eu não sei se é verdade,";
+			mes "mas eu consigo ver a diferença em cada cidade.";
 			next;
 			mes "[Leablem]";
-			mes "For instance, a slot technician in one town";
-			mes "provides a higher success chance to";
-			mes "equipment items at higher upgrade levels,";
-			mes "while a technician in another town has higher";
-			mes "success at lower upgrade levels.";
+			mes "Por exemplo, o técnido de slot em cada cidade";
+			mes "possui uma taxa de sucesso maior para";
+			mes "equipamentos com níveis maiores,";
+			mes "enqunto técnicos em outras cidade tem chance maior de";
+			mes "sucesso nos niveis mais baixos de equipamento.";
 			next;
 			mes "[Leablem]";
-			mes "When you fail to add a slot, the equipment";
-			mes "will become broken and disappear.";
-			mes "I try my best to succeed, but";
-			mes "slotting is complicated work.";
+			mes "Quando você falhar em adicionar um slot, o equipamento";
+			mes "vai se quebrar e desaparecer.";
+			mes "Eu vou tentar meu melhor para dar certo, mas";
+			mes "adicionar slots é complicado.";
 			next;
 			mes "[Leablem]";
-			mes "Oh, there's an important thing that you need to be careful about.";
-			mes "^FF0000Try not to carry two identical equipment items";
-			mes "^FF0000with you when you add slots.";
-			mes "^FF0000Otherwise, slots may be added to one of the randomly chosen items,";
-			mes "^FF0000and in the worst case, you may lose an item that is more valuable to you.^000000";
+			mes "Ah, tem uma coisa importante de que você precisa ser cuidadoso.";
+			mes "^FF0000Tente não carregar dois items idênticos";
+			mes "^FF0000com você quando voce adicionar slots.";
+			mes "^FF0000Se não, slots podem ser adicionados à um item escolhido aleatóriamente,";
+			mes "^FF0000e no pior caso, você pode perder o item que tem mais valor para você.^000000";
 			next;
 			mes "[Leablem]";
-			mes "I hope this information will be helpful to you.";
-			mes "Thanks.";
+			mes "Espero que essa informação seja útil para você.";
+			mes "Obrigado.";
 			close;
 		case 5:
 			mes "[Leablem]";
-			mes "Alright, then.";
+			mes "Tudo bem, então.";
 			close;
 	}
 }
@@ -394,42 +394,42 @@ function	script	Func_Socket2	{
 	mes "[Leablem]";
 	if (.@item_req[1] != 0 && .@req_amount[1] != 0)
 	{
-		mes getitemname(.@item_id) +"... Okay, then you need to bring me";
-		mes "^FF0000"+ (.@zeny_req >= 1000 ? (.@zeny_req /1000 +",000") : .@zeny_req) +",000 zeny as service charge,";
-		mes "^FF0000"+ .@req_amount[0] +"ea "+ getitemname(.@item_req[0]) +" and "+ .@req_amount[1] +"ea "+ getitemname(.@item_req[1]) +".";
-		mes "^FF0000Of course, you need a "+ getitemname(.@item_id) +".^000000";
+		mes getitemname(.@item_id) +"... Tudo bem, você precisa me trazer";
+		mes "^FF0000"+ (.@zeny_req >= 1000 ? (.@zeny_req /1000 +",000") : .@zeny_req) +",000 zeny como comissão,";
+		mes "^FF0000"+ .@req_amount[0] +"ea "+ getitemname(.@item_req[0]) +" e "+ .@req_amount[1] +"ea "+ getitemname(.@item_req[1]) +".";
+		mes "^FF0000Claro, você precisa de "+ getitemname(.@item_id) +".^000000";
 	}
 	else
 	{
-		mes getitemname(.@item_id) +"? Okay, then you need to bring me";
-		mes "^FF0000"+ (.@zeny_req >= 1000 ? (.@zeny_req/1000 +",000") : .@zeny_req) +",000 zeny as service charge and "+ .@req_amount[0] +" "+ getitemname(.@item_req[0]) + (.@req_amount[0] > 1 && .@item_req[0] != 999 ? "s":"") +" as the requirement.";
-		mes "^FF0000Of course, don't forget to bring me a "+ getitemname(.@item_id) +".";
-		mes "^FF0000You should have all items.^000000";
+		mes getitemname(.@item_id) +"? Beleza, então precisa me trazer";
+		mes "^FF0000"+ (.@zeny_req >= 1000 ? (.@zeny_req/1000 +",000") : .@zeny_req) +",000 zeny como comissão e "+ .@req_amount[0] +" "+ getitemname(.@item_req[0]) + (.@req_amount[0] > 1 && .@item_req[0] != 999 ? "s":"") +" como requisito.";
+		mes "^FF0000Claro, não esqueça de me trazer "+ getitemname(.@item_id) +".";
+		mes "^FF0000Você deve ter todos os itens.^000000";
 	}
 	next;
 	mes "[Leablem]";
-	mes "Did you already bring all of them?";
-	mes "For your information, if you fail to create a slot,";
-	mes "you will lose all the item requirement as well as the target "+ ((getiteminfo(.@item_id,5)&EQP_HAND_R) ? "weapon" : "armor") +".";
-	mes "Also remember, if the "+ ((getiteminfo(.@item_id,5)&EQP_HAND_R) ? "weapon" : "armor") +" has been upgraded, and has been inserted with a card,";
-	mes "you will lose them even if you succeed in creating a slot.";
+	mes "Você trouxe todos eles??";
+	mes "Para sua informação, se você falhar em criar um slot,";
+	mes "você vai perder todos os itens requisitados, assim como o alvo "+ ((getiteminfo(.@item_id,5)&EQP_HAND_R) ? "weapon" : "armor") +".";
+	mes "Também lembre, se o "+ ((getiteminfo(.@item_id,5)&EQP_HAND_R) ? "weapon" : "armor") +" foi refinado, e também tiver uma carta inserida,";
+	mes "você vai perde-los mesmo que tenha sucesso em criar um slot.";
 	next;
-	switch(select("Ask for slot creation.:Try next time."))
+	switch(select("Perguntar por criação de Slot.:Tentar uma próxima vez."))
 	{
 		case 1:
 			if ((Zeny >= .@zeny_req*1000) && countitem(.@item_req[0]) >= .@req_amount[0] && countitem(getarg(7,512)) >= .@req_amount[1] && countitem(.@item_id) > 0)// if there's no .@req_amount[0] and .@req_amount[1] provided, check itemcount against 0 (we still need a valid item ID though)
 			{
 				mes "[Leablem]";
-				mes "Alright then, let the work begin!";
-				mes "You'd better pray for a successful result.";
+				mes "Tudo bem então, vamos começar o trabalho!";
+				mes "É melhor você rezar para um bom resultado.";
 				next;
 				set .@a, rand(1,100);
 				if ((.@a > getarg(2)) && (.@a < getarg(3)))
 				{
 					specialeffect EF_LORD;
 					mes "[Leablem]";
-					mes "Great, it seems to be successful.";
-					mes "It looks pretty well done. Congratulations!";
+					mes "Ótimo, parece que foi um sucesso.";
+					mes "Parece que foi bem feito. Parabéns!";
 					delitem .@item_id,1;
 					delitem .@item_req[0],.@req_amount[0];
 					if (.@item_req[1] != 0 && .@req_amount[1] != 0)
@@ -438,18 +438,18 @@ function	script	Func_Socket2	{
 					getitem getarg(1),1;
 					next;
 					mes "[Leablem]";
-					mes "See you again, buddy!";
+					mes "Te vejo de novo, camarada!";
 					close;
 				}
 				else
 				{
 					specialeffect EF_SUI_EXPLOSION;
 					mes "[Leablem]";
-					mes "Wah! ...I am so sorry, it failed.";
-					mes "However, I am completely innocent.";
-					mes "This is your luck, and it is destined by god, okay?";
-					mes "Don't be so disappointed,";
-					mes "and try next time.";
+					mes "O quê! ...Me desculpe, mas falhou.";
+					mes "De qualquer modo, Eu sou completamente inocente.";
+					mes "Essa é a sua sorte, e também é destinado por deus, tudo bem?";
+					mes "Não fique desapontado,";
+					mes "e tente na próxima vez.";
 					delitem .@item_id,1;
 					delitem .@item_req[0],.@req_amount[0];
 					if (.@item_req[1] != 0 && .@req_amount[1] != 0)
@@ -457,20 +457,20 @@ function	script	Func_Socket2	{
 					Zeny = Zeny - .@zeny_req *1000;
 					next;
 					mes "[Leablem]";
-					mes "See you again, buddy!";
+					mes "Te vejo novamente, camarada!";
 					close;
 				}
 			}
 			else
 			{
 				mes "[Leablem]";
-				mes "Are you stupid or what? You didn't bring all of the required items!";
-				mes "Go bring them quick!";
+				mes "Você é estúpido ou o quê? Você não trouxe todo os itens requisitados!";
+				mes "Traga eles rápido!";
 				close;
 			}
 		case 2:
 			mes "[Leablem]";
-			mes "See you next time.";
+			mes "Te vejo novamente.";
 			close;
 	}
 }
